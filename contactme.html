@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        input,
+        textarea {
+            width: 80%;
+        }
+
+        .form-a {
+            width: 50%;
+            border: 1px solid;
+            border-radius: 12px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="./index.html">Home</a> |
+        <a href="./education.html">Education</a> |
+        <a href="./workexperience.html">WorkExperience</a> |
+        <a href="#">Contact Me</a> |
+    </div>
+    <hr />
+    <h1>Contact Me</h1>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" class="form-a">
+        <p>Enter Your Info..</p>
+        <div>
+            <label for="Name"> Your Name</label><br>
+            <input type="text" name="Name"><br><br>
+        </div>
+        <div>
+            <label>
+                Email <br>
+                <input type="email" name="Email"> <br><br>
+            </label>
+        </div>
+        <div>
+            <label fer="Gender">Gender</label> <br>
+            <input list="Gender" name="Gender">
+            <datalist id="Gender">
+                <option value="Male">
+                <option value="Female">
+            </datalist>
+        </div>
+        <div>
+            <p>Message</p>
+            <textarea name="Message" rows="10" cols="40"></textarea><br><br>
+            <button type="submit" value="submit">Submit</button>
+            <button type="reset" value="Clear">Clear</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
